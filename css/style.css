@@ -19,10 +19,11 @@
 
         body {
             color: var(--sky-text);
+            
             background: linear-gradient(
                 180deg,
-                #e5e7eb 0%,
-                #ffffff 100%
+                #ffffff 0%,
+                #e5e7eb 100%
             );
             font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         }
@@ -871,7 +872,7 @@
     text-transform: uppercase;
     font-size: 0.75rem;
     letter-spacing: 0.18em;
-    color: #0077ed;
+    color: #111827; /* dark gray */
     display: inline-block;
     margin-bottom: 8px;
 }
@@ -879,32 +880,32 @@
 .innovations-title {
     font-size: 2.4rem;
     font-weight: 700;
-    color: #003a7a;
+    color: #111827; /* dark gray */
 }
 
 .innovations-subtitle {
     max-width: 600px;
     margin: 0 auto;
-    color: #6c7d90;
+    color: #6b7280; /* muted gray */
     font-size: 1rem;
     margin-bottom: 30px;
 }
 
 /* Innovation Tile */
 .innovation-tile {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.75);
     border-radius: 22px;
     padding: 28px 22px;
     text-align: center;
-    border: 1px solid rgba(0, 119, 237, 0.1);
-    box-shadow: 0 15px 35px rgba(0, 35, 75, 0.08);
+    border: 1px solid rgba(156, 163, 175, 0.3); /* soft gray border */
+    box-shadow: 0 15px 35px rgba(17, 24, 39, 0.10); 
     backdrop-filter: blur(12px);
     transition: all 0.35s ease-in-out;
 }
 
 .innovation-tile:hover {
     transform: translateY(-8px);
-    box-shadow: 0 22px 55px rgba(0, 35, 75, 0.18);
+    box-shadow: 0 22px 55px rgba(17, 24, 39, 0.25);
 }
 
 /* Icon style */
@@ -916,7 +917,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(235, 245, 255, 0.9);
+    background: #e5e7eb; /* soft gray */
     margin-bottom: 18px;
 }
 
@@ -932,46 +933,41 @@
 }
 
 .innovation-tile h4 {
-    color: #003a7a;
+    color: #111827; /* dark gray */
     font-weight: 600;
     margin-bottom: 8px;
 }
 
 .innovation-tile p {
-    color: #6f8197;
+    color: #6b7280; /* muted gray */
     font-size: 0.95rem;
     margin: 0;
 }
+
 /* Force all innovation tiles to be the same size */
 .innovation-tile {
-    height: 380px;           /* fixed card height */
+    height: 380px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
 }
 
-/* Force all image blocks to be exactly the same size */
+/* Force uniform image container */
 .tile-icon {
-    height: 180px;           /* fixed image container size */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 16px;
-    background: #eaf3ff;
-    margin-bottom: 18px;
+    height: 180px;
+    background: #e5e7eb; /* soft gray */
 }
 
 /* Scale images consistently */
 .tile-icon img {
     width: 140px;
     height: 140px;
-    object-fit: cover;       /* ensures uniform cropping */
+    object-fit: cover;
     border-radius: 12px;
 }
 
-/* Keep titles and text aligned */
+/* Title and body alignment */
 .innovation-tile h4 {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -982,13 +978,6 @@
     margin-top: 0;
     font-size: 0.95rem;
 }
-/* ############## */
-
-
-/* Section Background */
-/* .services-section {
-    background: linear-gradient(180deg, #f8fbff 0%, #ecf5ff 60%, #ffffff 100%);
-} */
 
 /* Kicker text */
 .services-kicker {
@@ -996,28 +985,28 @@
     letter-spacing: 0.18em;
     font-size: 0.75rem;
     font-weight: 600;
-    color: #0077ed;
+    color: #111827; /* dark gray */
 }
 
 /* Highlight text */
 .highlight-tag {
-    background: #e8f3ff;
-    color: #0077ed;
+    background: #e5e7eb;
+    color: #111827;
     padding: 3px 10px;
     border-radius: 8px;
 }
 
 /* Contact Bar */
 .contact-bar {
-    background: rgba(255,255,255,0.75);
-    border: 1px solid rgba(0,110,220,0.15);
-    box-shadow: 0 10px 25px rgba(0,60,140,0.12);
+    background: rgba(255,255,255,0.8);
+    border: 1px solid rgba(156,163,175,0.4);
+    box-shadow: 0 10px 25px rgba(17,24,39,0.12);
 }
 
 .contact-icon {
     width: 90px;
     height: 90px;
-    background: linear-gradient(135deg, #7cb8ff, #0077ed);
+    background: linear-gradient(135deg, #6b7280, #111827); /* gray gradient */
 }
 
 /* Service Cards */
@@ -1026,32 +1015,32 @@
     padding: 25px;
     border-radius: 20px;
     text-align: left;
-    border: 1px solid rgba(0,110,220,0.1);
-    box-shadow: 0 12px 28px rgba(0,35,80,0.08);
+    border: 1px solid rgba(156,163,175,0.3);
+    box-shadow: 0 12px 28px rgba(17,24,39,0.12);
     transition: all 0.3s ease;
 }
 
 .service-card.glass {
-    background: rgba(255,255,255,0.55);
+    background: rgba(255,255,255,0.6);
     backdrop-filter: blur(14px);
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(229,231,235,0.5);
 }
 
 .service-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 45px rgba(0,35,80,0.18);
+    box-shadow: 0 20px 45px rgba(17,24,39,0.25);
 }
 
 .service-card h3 {
     margin-top: 18px;
     margin-bottom: 10px;
     font-weight: 600;
-    color: #003a7a;
+    color: #111827; /* dark gray */
 }
 
 .service-card p {
     font-size: 0.92rem;
-    color: #5f7b99;
+    color: #6b7280; /* muted gray */
 }
 
 .service-image {
